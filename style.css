@@ -1,0 +1,74 @@
+h1{
+    font-size: 5rem;
+    text-align: center;
+    background-color: #000;
+    background: linear-gradient(to left,#fff 20%, #65C7F7 40% , #0052D4 60%, #fff 80%);
+    background-size: 200% auto;
+    color: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 20s linear infinite;
+   
+}
+@keyframes animate{
+    to{
+        background-position: 200% center;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(to bottom ,#ff359b,#00d2ff,#fffd87);;
+    align-items: center;
+}
+.box{
+    width: 600px;
+    min-height: 500px;
+    background-color:white;
+    border-radius: 5px;
+    padding: 15px;
+}
+#item{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    box-shadow: 0px 0px 2px grey;
+    display: block;
+}
+#to-do-box{
+    margin-top: 20px;
+    list-style: none;
+}
+#to-do-box li{
+    position: relative;
+    background-color: rgb(242, 182, 108);
+    color:black;
+    padding: 10px;
+    border-radius: 2px;
+    padding-right: 30px;
+    text-align: justify;
+    margin-top: 10px;
+    user-select: none;
+}
+#to-do-box li i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+}
+.done{
+    text-decoration: line-through;
+    color: #000;
+    background-color: antiquewhite !important;
+}
